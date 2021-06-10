@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteBase /info-pidana/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /info-pidana/index.php [L]
+
+Options +Indexes
+IndexOptions +FancyIndexing
+
