@@ -3,7 +3,7 @@
         <img src="<?= base_url() ?>assets/img/logo.png" alt="logo">
 
         <h5 class="text-uppercase text-center mt-3">Login</h5>
-        <h6 class="text-center mb-3">Sistem Informasi Kartu TIK</h6>
+        <h6 class="text-center mb-3">PIDUM - Kejaksaan Negeri Kota Kediri</h6>
 
         <form class="form-type-material" method="POST" action="<?= base_url('auth/login') ?>">
             <!-- username -->
@@ -36,5 +36,9 @@
                 <button class="btn btn-bold btn-block btn-brown" type="submit">Login</button>
             </div>
         </form>
+
+        <div class="text-center">
+            <p class="text-danger"><b>Dokumen Rahasia</b> harap jaga privasi login.</p>
+        </div>
     </div>
 </div>
