@@ -9,11 +9,16 @@ class C_rp8 extends CI_Controller
 	 * Email	 : didintri198@gmail.com
 	 * Create At : 04-04-2021
 	 */
-	
+
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('App');
+
+		//cek login
+		if ($this->session->userdata('auth') == false) {
+			redirect(base_url('auth/login'));
+		}
 	}
 
 	public function index()
