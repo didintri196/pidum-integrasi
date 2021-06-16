@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -70,6 +70,8 @@ $route['admin/rp10'] = 'C_rp10';
 $route['admin/rp11'] = 'C_rp11';
 $route['admin/rp12'] = 'C_rp12';
 
+$route['auth/login'] = 'C_auth';
+$route['auth'] = 'C_auth/logout';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
